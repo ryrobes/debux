@@ -216,8 +216,8 @@
         (recur (z/next loc)) ))))
 
 (defn truncate [s]
-  (if (> (count s) 70)
-    (str (.substring s 0 70) " ...")
+  (if (> (count s) 7000)
+    (str (.substring s 0 7000) " ...")
     s))
 
 (defn make-bullets
